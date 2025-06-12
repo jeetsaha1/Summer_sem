@@ -4,8 +4,8 @@
 // 4.	Program to Convert Decimal to Binary Using Bitwise Operators.
 // 5.	Program to Implement a Simple Calculator Using Switch-Case.
 // 6.	Program to Find Prime Numbers in a Given Range Using Nested Loops.
-// 7.	 Program to Print a Pattern of Stars Using Nested Loops.
-// 8.	Program to Print Fibonacci Sequence Using a Loop.
+// 7.	Program to Print a Pattern of Stars Using Nested Loops.
+// 8.   Program to Print Fibonacci Sequence Using a Loop.
 
 
 
