@@ -1,0 +1,1 @@
+//C program to find inverse of a matrix. 
