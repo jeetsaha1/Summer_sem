@@ -26,8 +26,5 @@ int main(){
         printf("%d",bin[j]);
         
     }
-    
-
-    
     return 0;
 }
