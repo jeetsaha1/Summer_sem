@@ -1,37 +1,32 @@
-// //Count common subsequence in two strings. 
+//Count common subsequence in two strings. 
 
-// #include<stdio.h>
-// #include<string.h>
-// #include<math.h>
 
-// int main(){
-//     char str1[50];
-//     printf("Enter the string: ");
-//     scanf("%s",str1);
+#include<stdio.h>
+#include<string.h>
 
-//     int len_str1  = strlen(str1);
-//     int total_str1 = pow(2,len_str1);
-//     int count =0;
+int main(){
+    char str[100];
+    printf("Enter the string: ");
+    scanf("%s",str);
 
-//     char str2[50];
-//     printf("Enter the string: ");
-//     scanf("%s",str2);
+    char sub_str[100];  //For storing the subseqence
+    int n = strlen(str);
+    int total = 1<<n;   //2^n
 
-//     int len_str2  = strlen(str2);
-//     int total_str2 = pow(2,len_str2);
-
-//     for (int i = 0,k=0; i < total_str1 , k < total_str2; i++,k++)
-//     {
-//         for (int j = 0,l=0; j < len_str1,l<len_str2; j++,l++)
-//         {
-//             if((i&(1<<j))&&(k&(1<<l))){
-//                 if( strcmp(str1[j],str2[l]) == 0){
-//                     count++;
-//                 }
-//             }
-//         }
-        
-//     }
-//     printf("The number of common subsequence is: %d",count);
-//     return 0;
-// }
+    for (int mask = 0; mask < total; mask++)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if(mask & (1<<i))
+                // sub_str[i] = str[i];
+                printf("%c",str[i]);
+        }
+        printf("\n");
+    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     printf("%c\n",sub_str[i]);
+    // }
+    
+    return 0;
+}
